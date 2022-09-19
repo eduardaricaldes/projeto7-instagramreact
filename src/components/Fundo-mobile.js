@@ -4,11 +4,15 @@ export default  function FundoMobile (){
   function buttonPreenchido(){
     setBookmark("bookmark")
   }
+  const [heart, setHeart] = useState("heart-outline")
+  function buttonHeart (){
+    setHeart("heart")
+  }
   return(
     <div className="fundo">
       <div className="acoes">
         <div>
-          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name={heart} onClick={buttonHeart}></ion-icon>
           <ion-icon name="chatbubble-outline"></ion-icon>
           <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
