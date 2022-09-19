@@ -1,4 +1,11 @@
+import { useState } from "react";
 export default function Post(props){
+  const [bookmark, setBookmark] = useState("bookmark-outline")
+  function buttonPreenchido(){
+    setBookmark("bookmark")
+  }
+  
+
   return(
       <div className="post">
         <div className="topo">
@@ -21,7 +28,7 @@ export default function Post(props){
               <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
             <div>
-              <ion-icon name="bookmark-outline"></ion-icon>
+              <ion-icon name={bookmark} onClick={buttonPreenchido}></ion-icon>
             </div>
           </div>
           <div className="curtidas">

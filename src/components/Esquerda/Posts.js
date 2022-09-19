@@ -7,6 +7,7 @@ import adorableAnimals from "../../assets/img/adorable_animals.svg";
 import Post from "./Post";
 
 export default function Posts (){
+  <button></button>
   const posts = [
     {
       id:1,
